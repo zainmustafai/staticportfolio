@@ -1,6 +1,6 @@
 import React from 'react'
 import Bar from './Bar';
-import profilePicture from './dp.svg';
+import profilePicture from './dp.png';
 import './Animation.css'
 
 const skillset=[
@@ -20,8 +20,8 @@ const skillset=[
 
 const SkillsSection = () => {
   return (
-    <section className=' grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-2 md:gap-4 lg:gap-8 xl:gap-12 p-5 text-center mt-16'>
-        <div className='dp-div flex flex-col items-center gap-4 col-span-2 md:col-span-1 p-1 '
+    <section className=' grid grid-cols-1 md:grid-cols-1 xl:grid-cols-2 gap-2 md:gap-4 lg:gap-8 xl:gap-12 p-5 text-center mt-16'>
+        <div className='dp-div flex flex-col items-center gap-4 col-span-2 md:col-span-1 p-1'
         data-aos="fade-right"
         >
             <div

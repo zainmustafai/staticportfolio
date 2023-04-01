@@ -3,20 +3,16 @@ import About from '../../components/About/About'
 import Hero from '../../components/Hero/Hero'
 import Navbar from '../../components/Navbar/Navbar'
 import Portfolio from '../../components/Portfolio/Portfolio'
-//const About = React.lazy(()=> import('../../components/About/About'));
 import Aos from 'aos'; // animate on scroll
 import "aos/dist/aos.css"; // aos css file
 import { useInView } from "react-intersection-observer"; // ANimate on Visibility 
 import { motion, useAnimation } from "framer-motion"; // Animation Hooks.
-// import BlogsSection from '../../components/BlogsSection/BlogsSection'
-import ContactForm from '../../components/ContactForm/ContactForm'
 import TriangleClipPath from '../../components/TriangleClipPath/TriangleClipPath';
 import Footer from '../../components/Footer/Footer'
 
 import { useRef } from 'react'
 import MyTechStack from '../../components/MyTechStack/MyTechStack'
 // npm i aos --save 
-//Possible  ANIMATION PROPS data-aos="fade-left", fade-right, up, down etc....
 
 const HomePage = () => {
   const portfolioRef = useRef(null);
@@ -71,7 +67,7 @@ const HomePage = () => {
         initial='hidden'
         animate={control}
       >
-        <Navbar homeRef={homeRef} contactRef={contactRef} portfolioRef={portfolioRef} aboutRef={aboutRef} />
+        <Navbar homeRef={homeRef} portfolioRef={portfolioRef} aboutRef={aboutRef} />
       </motion.div>
       <Hero portfolioRef={portfolioRef} homeRef={homeRef} />
       <div
@@ -83,7 +79,6 @@ const HomePage = () => {
       <About refVar={aboutRef} />
       <Portfolio refVar={portfolioRef} />
       <TriangleClipPath />
-      {/* <ContactForm refVar={contactRef} /> */}
       <Footer />
     </div>
   )
