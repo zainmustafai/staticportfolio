@@ -23,8 +23,8 @@ const HomePage = () => {
   useEffect(() => {
     Aos.init({
       duration: 1000,
-      mirror: true, // reverse animation when scroll past the component.
-      anchorPlacement: 'top-bottom',
+      // mirror: true, // reverse animation when scroll past the component.
+      anchorPlacement: 'top-top',
 
     })
   }, []);

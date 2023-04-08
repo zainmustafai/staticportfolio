@@ -47,7 +47,7 @@ const Portfolio = ({ refVar }) => {
               return <li className='text-lg text-pink-800 font-bold'>
                 <button
                   className={` px-8 hover:bg-slate-300 ${(active===item) ? colorClass : ''} `}
-                  key={item}
+                  key={Math.random().toString(36).substring(7)}
                   id={item.toString()}
                   onClick={handleTabClick}>
                   {item.toString().toUpperCase()}
