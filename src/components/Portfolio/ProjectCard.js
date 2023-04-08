@@ -1,7 +1,7 @@
 import React from "react";
 const ProjectCard = ({ projectObject, animationDuration }) => {
   return (
-    <div className=" w-full  xsm:px-[12%] sm:p-0 ">
+    <div className=" w-full  px-[15%] md:p-[2%] ">
       <img
         src={projectObject.img}
         alt={"project-img"}
@@ -11,9 +11,6 @@ const ProjectCard = ({ projectObject, animationDuration }) => {
       />
       <div
         className="h-full w-full px-4 flex flex-col items-center justify-around opacity-[0.01] transition  ease-in-out   duration-300 hover:opacity-100 bg-white -translate-y-[100%]"
-      // This is Overlay White Card
-      // data-aos="fadeIn"
-      // data-aos-duration={animationDuration}
       >
         <div className="flex flex-col items-center h-[20%] justify-around">
           <h1 className="text-xl font-bold text-gray-900 text-center">

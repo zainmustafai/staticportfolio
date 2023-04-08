@@ -96,7 +96,7 @@ const Footer = () => {
               </div>
               <div className="w-10/12 m-auto  mt-16 space-y-6 text-center sm:text-left sm:w-5/12 sm:mt-auto">
                 <span className="block text-gray-300">
-                  I Create the Best MERN Web Apps
+                  I Create MERN Stack Web Apps.
                 </span>
 
                 <span className="block text-gray-300">

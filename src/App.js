@@ -3,7 +3,7 @@ import './App.css';
 import HomePage from './Pages/HomePage/HomePage';
 function App() {
   return (
-    <div className="">
+    <div className="text-center scroll-m-0">
       <Routes>
         <Route path='/' exact element={<HomePage/>} />
       </Routes>

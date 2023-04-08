@@ -11,7 +11,7 @@ const scrollToSection = (ref) => {
   });
 };
 
-const openWhatsapp = ()=>{
+const openWhatsapp = () => {
   window.open('https://wa.me/+923021554648', '_blank', 'noopener,noreferrer'); // open link in new tab.
 }
 
@@ -54,8 +54,8 @@ const Navbar = ({ homeRef, contactRef, portfolioRef, aboutRef }) => {
             })
           }
           <motion.div
-          whileHover={{ scale: 1.1, }}
-                whileTap={{ scale: 0.9 }}
+            whileHover={{ scale: 1.1, }}
+            whileTap={{ scale: 0.9 }}
           >
             <li onClick={openWhatsapp} className='hover:text-yellow-600' >CONTACT</li>
           </motion.div>

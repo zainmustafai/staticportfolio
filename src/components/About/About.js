@@ -42,8 +42,6 @@ const About = ({refVar}) => {
       <div className="cards mt-16 w-full px-2 sm:px-2 lg:px-52 xl:px-56">
         <div
           className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 "
-          data-aos="fade-up"
-          data-aos-once="true"
         >
           {features.map((items) => {
             let i = 1;

@@ -60,7 +60,7 @@ const HomePage = () => {
   }, [navbarInView, control])
 
   return (
-    <div className='w-full min-w-min'>
+    <div className='w-full min-w-min overflow-x-hidden'>
       <motion.div
         style={topBarStyle}
         variants={navAnimation}
