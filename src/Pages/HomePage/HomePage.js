@@ -22,9 +22,11 @@ const HomePage = () => {
 
   useEffect(() => {
     Aos.init({
-      duration: 1000,
-      // mirror: true, // reverse animation when scroll past the component.
-      anchorPlacement: 'top-top',
+      delay:"0",
+      easing:'ease-in',
+      duration: 200,
+      mirror: true, // reverse animation when scroll past the component.
+      anchorPlacement: 'top-bottom',
 
     })
   }, []);

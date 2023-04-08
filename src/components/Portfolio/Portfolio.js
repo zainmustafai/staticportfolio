@@ -38,6 +38,9 @@ const Portfolio = ({ refVar }) => {
       ref={refVar}
     >
       <SectionHeading text={"PORTFOLIO"} colorCode={"45474A"} />
+      <h2  className='text-lg my-8'>
+        Some of my recent projects.
+      </h2>
       <div className=' tabs w-full'>
         {/* Tabs */}
         <ul className='flex items-center justify-around border-2 px-8'
@@ -46,7 +49,7 @@ const Portfolio = ({ refVar }) => {
             tabs.map((item) => {
               return <li className='text-lg text-pink-800 font-bold'>
                 <button
-                  className={` px-8 hover:bg-slate-300 ${(active===item) ? colorClass : ''} `}
+                  className={` px-8 hover:bg-slate-300 ${(active === item) ? colorClass : ''} `}
                   key={Math.random().toString(36).substring(7)}
                   id={item.toString()}
                   onClick={handleTabClick}>
